@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunil Polaka | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+    .btn {
+      background: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #005fa3;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      margin: 15px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    /* Contact Section Styling */
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.1em;
+      flex-wrap: wrap;
+    }
+    .contact-links a {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    .contact-links a:hover {
+      background-color: #f5f5f5;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+      <!-- Profile Image -->
+      <img src="Sunilp.jpg" alt="My Photo" style="width:200px; height:200px; border-radius:50%; object-fit:cover; border:3px solid #fff;">
+      
+      <!-- Header Text -->
+      <div>
+        <h1>Hi, I'm Sunil 👋</h1>
+        <p>Aspiring Developer | Java | Python | JavaScript</p>
+      </div>
+    </div>
+  </header>
+ 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about building dynamic and interactive web applications. Skilled in Java, Python, and JavaScript.</p>
+    <button class="btn" onclick="showMessage()">Click Me</button>
+    <p id="dynamicText"></p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>🌐 Portfolio Website</h3>
+      <p>A responsive portfolio made with HTML, CSS, and JS.</p>
+    </div>
+    <div class="project-card">
+      <h3>📊 Hotel Management DBMS</h3>
+      <p>Database project with SQL + Java for managing hotel records.</p>
+    </div>
+    <div class="project-card">
+      <h3>🛠 IoT Air Monitoring</h3>
+      <p>Arduino + MQ2 gas sensor to detect air pollution in real time.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center;">Feel free to reach out to me! I'm open to discussing new opportunities and collaborations.</p>
+    <div class="contact-links">
+      <a href="mailto:sunilpolaka3@gmail.com">📩 Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sunil Polaka | Built with ❤ using HTML, CSS & JS</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("dynamicText").innerText = "🚀 Keep pushing forward, success is on the way!";
+    }
+  </script>
+
+</body>
+</html>

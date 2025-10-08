@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Events Simple</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 40px;
+    }
+    #hoverBox {
+      width: 200px;
+      height: 200px;
+      background: lightblue;
+      margin: 20px auto;
+      line-height: 150px;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body onload="loaded()" onresize="resized()">
+
+  <h2>JS Events Demo</h2>
+
+  <button onclick="clicked()">Click Me</button>
+
+  <div id="hoverBox" onmouseover="hoverIn()" onmouseout="hoverOut()">
+    Hover Me
+  </div>
+
+  <button onclick="reloadPage()">Reload</button>
+
+  <div id="output"></div>
+
+  <script>
+    function loaded() {
+      document.getElementById("output").textContent = "Page Loaded";
+    }
+
+    function resized() {
+      document.getElementById("output").textContent = "Window Resized";
+    }
+
+    function clicked() {
+      document.getElementById("output").textContent = "Button Clicked";
+    }
+
+    function hoverIn() {
+      const box = document.getElementById("hoverBox");
+      box.style.background = "lightgreen";
+      box.textContent = "Mouse Over";
+    }
+
+    function hoverOut() {
+      const box = document.getElementById("hoverBox");
+      box.style.background = "lightblue";
+      box.textContent = "Hover Me";
+    }
+
+    function reloadPage() {
+      location.reload();
+    }
+  </script>
+
+</body>
+</html>
